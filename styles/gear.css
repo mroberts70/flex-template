@@ -1,3 +1,6 @@
+body {
+    background-color: whitesmoke;
+}
 header {
     background-color: darkgreen;
     background-image: url(../images/hero-image-forest2.jpg);
@@ -23,6 +26,7 @@ aside {
     margin: auto;
 }
 .product {
+    background-color: white;
     display: grid;
     grid-template-columns: 10vw 80vw;
     border: 1px solid #ccc;
