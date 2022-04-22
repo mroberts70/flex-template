@@ -1,0 +1,66 @@
+header {
+    background-color: darkgreen;
+    background-image: url(../images/hero-image-forest.jpg);
+    background-position: center;
+    background-size: cover;
+}
+header h1 {
+    align-self: center;
+    justify-self: flex-start;
+    font-size: 250%;
+    margin-left: 2em;
+}
+.the-gear {
+    display: grid;
+    grid-template-columns: 20vw 80vw;
+}
+aside {
+    background-color: red;
+    margin: 1em;
+}
+.products {
+    width: 80vw;
+    margin: auto;
+}
+.product {
+    display: grid;
+    grid-template-columns: 10vw 80vw;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: .5em;
+    grid-template-areas: 
+    'thumbnail product-name'
+    'thumbnail product-description'
+    'thumbnail product-price';
+    align-items: center;
+    margin: 2em;
+    text-decoration: none;
+    color: #000;
+    transition: all ease-in-out 300ms;
+    /* background-color: red; */
+
+}
+.product:hover {
+    border: 1px solid #000;
+    box-shadow: 3px 3px 12px 3px gray;
+
+}
+.thumbnail {
+    grid-area: thumbnail;
+    justify-self: center;
+    border-radius: 10px;
+    max-width: 150px;
+}
+.product-name {
+    grid-area: product-name;
+    text-decoration: underline;
+}
+.product-description {
+    grid-area: product-description;
+    
+    
+}
+.product-price {
+    grid-area: product-price;
+}
+
