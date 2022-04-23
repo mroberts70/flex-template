@@ -8,6 +8,8 @@ body {
     font-family: 'Kanit', sans-serif;
     font-size: 110%;
     height: 100vh;
+    background-color: #202124;
+    color: aliceblue;
     display: flex;
     flex-direction: column;
 }
@@ -94,8 +96,6 @@ nav a:hover, nav a:focus {
 
 .sales-points {
     padding: 8vh 0;
-    background-color: #202124;
-    color: aliceblue;
     text-align: center;
     display: flex;
     flex-wrap: wrap;
@@ -145,11 +145,9 @@ nav a:hover, nav a:focus {
 footer {
     padding: 2em 0;
     border-top: 5px ridge goldenrod;
-    background-color: #202124;
 }
 footer p {
     font-size: 80%;
-    color: aliceblue;
     font-variant: small-caps;
     text-align: center;
     font-weight: 600;
