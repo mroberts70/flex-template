@@ -1,3 +1,8 @@
+body {
+    background-color: #202124;
+    color: aliceblue;
+}
+
 header {
     background-color: darkgreen;
     background-image: url(../images/hero-image-forest2.jpg);
@@ -25,6 +30,9 @@ header h1 {
     flex-direction: column;
     align-items: center;
     margin: 1.5em;
+    /* outline: 1px solid aliceblue;
+    outline-offset: .35em;
+    border-radius: 5px; */
 
 }
 .testimonial img {

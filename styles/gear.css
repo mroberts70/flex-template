@@ -1,5 +1,5 @@
 body {
-    background-color: whitesmoke;
+    background-color: #202124;
 }
 header {
     background-color: darkgreen;
@@ -27,7 +27,7 @@ aside {
     margin: auto;
 }
 .product {
-    background-color: white;
+    background-color: #303235;
     display: grid;
     grid-template-columns: 22% 78%;
     justify-content: center;
@@ -43,7 +43,7 @@ aside {
     align-items: center;
     margin: 2em;
     text-decoration: none;
-    color: #000;
+    color: aliceblue;
     transition: all ease-in-out 300ms;
     /* background-color: red; */
 
