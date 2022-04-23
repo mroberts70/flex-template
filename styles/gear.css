@@ -6,6 +6,8 @@ header {
     background-image: url(../images/hero-image-forest2.jpg);
     background-position: center;
     background-size: cover;
+    background-blend-mode: multiply;
+
 }
 header h1 {
     align-self: center;
@@ -15,25 +17,27 @@ header h1 {
 }
 .the-gear {
     display: grid;
-    grid-template-columns: 20vw 80vw;
+    grid-template-columns: 20% 80%;
 }
 aside {
     background-color: red;
     margin: 1em;
 }
 .products {
-    width: 80vw;
     margin: auto;
 }
 .product {
     background-color: white;
     display: grid;
-    grid-template-columns: 10vw 80vw;
+    grid-template-columns: 22% 78%;
+    justify-content: center;
+    align-items: center;
+    justify-items: stretch;
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: .5em;
     grid-template-areas: 
-    'thumbnail product-name'
+    'thumbnail product-title'
     'thumbnail product-description'
     'thumbnail product-price';
     align-items: center;
@@ -52,19 +56,46 @@ aside {
 .thumbnail {
     grid-area: thumbnail;
     justify-self: center;
+    border: 3px double #ccc;
     border-radius: 10px;
     max-width: 150px;
+    box-shadow: 1px 1px 5px 0;
+
 }
-.product-name {
-    grid-area: product-name;
+.product-title {
+    grid-area: product-title;
     text-decoration: underline;
 }
 .product-description {
-    grid-area: product-description;
-    
-    
+    grid-area: product-description;    
 }
 .product-price {
     grid-area: product-price;
 }
 
+@media (max-width: 600px) {
+    header h1 {
+        text-align: center;
+        margin: 0;
+    }
+    .the-gear, .products, .product, header {
+        grid-template-columns: 1fr;
+        max-width: 100%;
+
+    }
+    .products {
+        gap: 1em;
+    }
+    .product {
+        grid-template-areas: 
+        'thumbnail'
+        'product-title'
+        'product-description'
+        'product-price';
+        justify-items: center;
+        margin: 0;
+        
+    
+    
+    }
+}

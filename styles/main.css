@@ -17,10 +17,7 @@ header {
     flex-direction: row;
 }
 .logoimage {
-    max-width: 150px;
-    align-self: flex-start;
-    justify-self: flex-start;
-   
+    max-width: 150px;   
 }
 
 nav {
@@ -48,10 +45,9 @@ nav a:link, nav a:visited {
     transition: all ease-in-out 300ms;
 }
 nav a:hover, nav a:focus {
-    color: lime;
+    color: fuchsia;
     text-decoration: underline;
     text-shadow: 0 0 9px black;
-
 }
 
 
@@ -61,16 +57,15 @@ nav a:hover, nav a:focus {
     background-image: url(../images/hero-image-forest2.jpg);
     background-position: center;
     background-size: cover;
-    /* background-blend-mode:darken; */
+    background-blend-mode: multiply;
     height: 100vh;
     color: aliceblue;
     display: flex;
     flex-direction: column;
 }
 .title-text {
-    padding-top: 40vh;
     align-self: flex-start;
-    margin: 3vw 0 0 15vw;
+    margin: 15vw 0 0 12vw;
     display: flex;
     flex-direction: column;
 }
@@ -106,7 +101,7 @@ nav a:hover, nav a:focus {
 }
 .sales-point {
     margin: 2em 1.65em;
-    width: 30vw;
+    width: 25vw;
 }
 .sales-point p {
     margin: .5em 0;
@@ -187,8 +182,15 @@ footer p {
         padding-top: 5vh;
         align-self: center;
         margin-right: 0;
-        
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     
+    
+    }
+    .allcaps {
+        letter-spacing: 5px;
     }
     .title-text h1 {
         font-size: 150%;
@@ -204,5 +206,10 @@ footer p {
     .sales-point {
         margin: 2em 1em;
         width: 90vw;
+    }
+    .cta-contents {
+        padding: 3em 2em;
+        text-align: center;
+        margin: 3em;
     }
 }
