@@ -42,7 +42,7 @@ form h5 {
     background-color: white;
 }
 .form-element input[type="checkbox"] {
-    background-color: red;
+    accent-color: red;
 }
 .form-element input {
     margin: .5em;
