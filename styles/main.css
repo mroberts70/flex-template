@@ -21,7 +21,9 @@ header {
     justify-content: space-between;
 }
 .logoimage {
-    max-width: 150px;   
+    max-width: 200px; 
+    background-color: transparent; 
+    padding: 1em; 
 }
 
 nav {
