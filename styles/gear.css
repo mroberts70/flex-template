@@ -9,6 +9,7 @@ header {
 header h1 {
     align-self: center;
     justify-self: flex-start;
+    flex-grow: 1;
     font-size: 250%;
     margin-left: 2em;
 }
