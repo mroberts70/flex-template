@@ -32,7 +32,55 @@
             </header>
         </section>
         <section class="the-gear">
-            <aside>filters</aside>
+            <aside>
+                <form action="#" method="get">
+                    <div class="form-element">
+                        <input type="text" name="search" id="search" placeholder="Search">
+                    </div>
+                    <h5>Gender</h5>
+                    <div class="form-element">
+                        <input type="checkbox" name="gender-womens" id="gender-womens">
+                        <label for="gender-womens">Womens (7)</label>
+                    </div>
+                    <div class="form-element">
+                        <input type="checkbox" name="gender-mens" id="gender-mens">
+                        <label for="gender-mens">Mens (6)</label>
+                    </div>
+                    <div class="form-element">
+                        <input type="checkbox" name="gender-girls" id="gender-girls">
+                        <label for="gender-girls">Girls (3)</label>
+                    </div>
+                    <div class="form-element">
+                        <input type="checkbox" name="gender-boys" id="gender-boys">
+                        <label for="gender-boys">Boys (4)</label>
+                    </div>
+
+                    <h5>Department</h5>
+                    <div class="form-element">
+                        <input type="checkbox" name="clothing" id="clothing">
+                        <label for="clothing">Clothing</label>
+                    </div>
+                    <div class="form-element">
+                        <input type="checkbox" name="shoes" id="shoes">
+                        <label for="shoes">Shoes</label>
+                    </div>
+                    <div class="form-element">
+                        <input type="checkbox" name="bags" id="bags">
+                        <label for="bags">Bags & Backpacks</label>
+                    </div>
+                    <div class="form-element">
+                        <input type="checkbox" name="accessories" id="accessories">
+                        <label for="accessories">Accessories</label>
+                    </div>
+                    <div class="form-buttons">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </div>
+                </form>
+
+
+
+            </aside>
             <article class="products">
                 <div>
                     <a href="#" class="product">
@@ -100,8 +148,39 @@
             </article>
         </section>
 
+        <!-- Return to Top Button -->
+        <div><button onclick="topFunction()" id="cornerbtn" class="return-to-top" title="Go to top"><img src="images/back-to-top-icon-png-7.jpg" alt=""></button></div>
+
+        <!-- JavaScript - Return to Top -->
+        <script>
+            // When the user scrolls down 800px from the top of the document, show the button
+             window.onscroll = function() {scrollFunction()};
+         
+             function scrollFunction() {
+               if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+                 document.getElementById("cornerbtn").style.display = "block";
+               } else {
+                 document.getElementById("cornerbtn").style.display = "none";
+               }
+             }
+         
+             // When the user clicks on the button, scroll to the top of the document
+             function topFunction() {
+               document.body.scrollTop = 0;
+               document.documentElement.scrollTop = 0;
+             }
+         </script>
+
+        <!-- Javascript - Get Current Year for the Footer -->
+        <script>
+            window.onload = function() {
+                var d = new Date();
+                document.getElementById("copyright").innerHTML = d.getFullYear();
+            }
+        </script>         
+
         <footer>
-            <p>&copy; 2022 Michael Roberts Productions</p>
+            <p>&copy; <span id="copyright"></span> Michael Roberts Productions</p>
         </footer>
 
     </main>

@@ -69,12 +69,103 @@
                     <img src="https://picsum.photos/206" alt="">
                     <p>Tempora saepe ipsa exercitationem repellat placeat quidem voluptas tempore, suscipit nam itaque animi, sit reprehenderit natus porro, soluta nulla necessitatibus quasi! Laborum cum repudiandae natus!</p>
                 </div>
+                <div class="testimonial">
+                    <h3>Pariatur sit</h3>
+                    <img src="https://picsum.photos/207" alt="">
+                    <p>Maiores praesentium animi laudantium quia, nulla autem eos consequuntur provident libero magni impedit nesciunt laborum laboriosam a architecto ratione quod rem ipsa earum deleniti possimus.</p>
+                </div>
+                <div class="testimonial">
+                    <h3>Id explicabo</h3>
+                    <img src="https://picsum.photos/208" alt="">
+                    <p>Tempora, modi. Ducimus asperiores commodi ipsam laborum, magnam deserunt mollitia minima ex voluptatibus in nobis quia veritatis repellendus eligendi assumenda voluptatem ipsum nihil modi laboriosam!</p>
+                </div>
+                <div class="testimonial">
+                    <h3>Fugiat numquam</h3>
+                    <img src="https://picsum.photos/209" alt="">
+                    <p>Doloremque cum ex voluptate. Commodi nihil veniam, quos perspiciatis natus explicabo unde modi necessitatibus excepturi quisquam in harum at. Exercitationem qui facilis dolor aperiam assumenda.</p>
+                </div>
+                <div class="testimonial">
+                    <h3>Enim illum</h3>
+                    <img src="https://picsum.photos/210" alt="">
+                    <p>Velit dicta animi dolore ipsam saepe harum quidem. Rem at saepe eveniet quod ea animi expedita adipisci officiis, esse nulla? Nostrum atque placeat error quisquam?</p>
+                </div>
+                <div class="testimonial">
+                    <h3>Pariatur sit</h3>
+                    <img src="https://picsum.photos/212" alt="">
+                    <p>Maiores praesentium animi laudantium quia, nulla autem eos consequuntur provident libero magni impedit nesciunt laborum laboriosam a architecto ratione quod rem ipsa earum deleniti possimus.</p>
+                </div>
+                <div class="testimonial">
+                    <h3>Id explicabo</h3>
+                    <img src="https://picsum.photos/213" alt="">
+                    <p>Tempora, modi. Ducimus asperiores commodi ipsam laborum, magnam deserunt mollitia minima ex voluptatibus in nobis quia veritatis repellendus eligendi assumenda voluptatem ipsum nihil modi laboriosam!</p>
+                </div>
+                <div class="testimonial">
+                    <h3>Fugiat numquam</h3>
+                    <img src="https://picsum.photos/214" alt="">
+                    <p>Doloremque cum ex voluptate. Commodi nihil veniam, quos perspiciatis natus explicabo unde modi necessitatibus excepturi quisquam in harum at. Exercitationem qui facilis dolor aperiam assumenda.</p>
+                </div>
+                <div class="testimonial">
+                    <h3>Enim illum</h3>
+                    <img src="https://picsum.photos/215" alt="">
+                    <p>Velit dicta animi dolore ipsam saepe harum quidem. Rem at saepe eveniet quod ea animi expedita adipisci officiis, esse nulla? Nostrum atque placeat error quisquam?</p>
+                </div>
+                <div class="testimonial">
+                    <h3>Pariatur sit</h3>
+                    <img src="https://picsum.photos/216" alt="">
+                    <p>Maiores praesentium animi laudantium quia, nulla autem eos consequuntur provident libero magni impedit nesciunt laborum laboriosam a architecto ratione quod rem ipsa earum deleniti possimus.</p>
+                </div>
+                <div class="testimonial">
+                    <h3>Id explicabo</h3>
+                    <img src="https://picsum.photos/217" alt="">
+                    <p>Tempora, modi. Ducimus asperiores commodi ipsam laborum, magnam deserunt mollitia minima ex voluptatibus in nobis quia veritatis repellendus eligendi assumenda voluptatem ipsum nihil modi laboriosam!</p>
+                </div>
+                <div class="testimonial">
+                    <h3>Fugiat numquam</h3>
+                    <img src="https://picsum.photos/218" alt="">
+                    <p>Doloremque cum ex voluptate. Commodi nihil veniam, quos perspiciatis natus explicabo unde modi necessitatibus excepturi quisquam in harum at. Exercitationem qui facilis dolor aperiam assumenda.</p>
+                </div>
+                <div class="testimonial">
+                    <h3>Enim illum</h3>
+                    <img src="https://picsum.photos/219" alt="">
+                    <p>Velit dicta animi dolore ipsam saepe harum quidem. Rem at saepe eveniet quod ea animi expedita adipisci officiis, esse nulla? Nostrum atque placeat error quisquam?</p>
+                </div>
 
             </article>
         </section>
 
+        <!-- Return to Top Button -->
+        <div><button onclick="topFunction()" id="cornerbtn" class="return-to-top" title="Go to top"><img src="images/back-to-top-icon-png-7.jpg" alt=""></button></div>
+
+        <!-- JavaScript - Return to Top -->
+        <script>
+            // When the user scrolls down 800px from the top of the document, show the button
+             window.onscroll = function() {scrollFunction()};
+         
+             function scrollFunction() {
+               if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+                 document.getElementById("cornerbtn").style.display = "block";
+               } else {
+                 document.getElementById("cornerbtn").style.display = "none";
+               }
+             }
+         
+             // When the user clicks on the button, scroll to the top of the document
+             function topFunction() {
+               document.body.scrollTop = 0;
+               document.documentElement.scrollTop = 0;
+             }
+         </script>
+
+        <!-- Javascript - Get Current Year for the Footer -->
+        <script>
+            window.onload = function() {
+                var d = new Date();
+                document.getElementById("copyright").innerHTML = d.getFullYear();
+            }
+        </script>         
+
         <footer>
-            <p>&copy; 2022 Michael Roberts Productions</p>
+            <p>&copy; <span id="copyright"></span> Michael Roberts Productions</p>
         </footer>
 
     </main>

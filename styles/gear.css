@@ -15,12 +15,61 @@ header h1 {
 }
 .the-gear {
     display: grid;
-    grid-template-columns: 20% 80%;
+    grid-template-columns: 20vw 80vw;
 }
 aside {
-    background-color: red;
+    background-color: #555;
     margin: 1em;
+    border: 3px double #aaa;
+    border-radius: 10px;
 }
+
+/* Filters */
+form h5 {
+    margin: .5em;
+    font-size: 120%;
+}
+.form-element {
+    padding: .5em;
+}
+.form-element input[type="text"] {
+    padding: .5em .25em;
+    background-color: #bbb;
+    width: 80%;
+    border-radius: 5px;
+}
+.form-element input[type="text"]:focus {
+    background-color: white;
+}
+.form-element input[type="checkbox"] {
+    background-color: red;
+}
+.form-element input {
+    margin: .5em;
+}
+.form-element:hover {
+    background-color: #555;
+}
+.form-buttons {
+    margin: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.form-buttons input {
+    padding: .5em .75em;
+    border-radius: 5px;
+    background-color: aliceblue;
+    border: 3px solid #333;
+    color: #333;
+    font-weight: bold;
+}
+.form-buttons input:hover {
+    background-color: black;
+    color: fuchsia;
+    border: 3px solid fuchsia;
+}
+
 .products {
     margin: auto;
 }
@@ -32,7 +81,7 @@ aside {
     align-items: center;
     justify-items: stretch;
     border: 3px double #aaa;
-    border-radius: 5px;
+    border-radius: 10px;
     padding: .5em;
     grid-template-areas: 
     'thumbnail product-title'
@@ -80,6 +129,9 @@ aside {
         max-width: 100%;
 
     }
+    .form-element input[type="text"] {
+        width: 95%;
+    }
     .products {
         gap: 1em;
     }
@@ -90,7 +142,11 @@ aside {
         'product-description'
         'product-price';
         justify-items: center;
-        margin: 0;
+        margin: .5em 0;
+        border: none;
+        border-radius: 0;
+        border-top: 3px double #aaa;
+        border-bottom: 3px double #aaa;
         
     
     

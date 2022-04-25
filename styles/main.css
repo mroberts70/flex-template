@@ -12,6 +12,7 @@ body {
     color: aliceblue;
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
 }
 
 header {
@@ -144,6 +145,24 @@ nav a:hover, nav a:focus {
     border-radius: 10px;
     box-shadow: 1px 1px 12px 2px gray;
 }
+.return-to-top {
+    display: none; /* Hidden by default */
+    position: fixed;
+    left: 75px;
+    bottom: 75px;
+    z-index: 9999; /* Make sure it does not overlap */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    border: none;
+    border-radius: 50%;
+    background-color: rgba(255,255,255,.5);
+    transition: all ease-in-out 300ms;
+}
+ .return-to-top img {
+     max-width: 50px;
+ }
+ .return-to-top:hover {
+    background-color: rgba(255,0,255,1);
+ }
 
 footer {
     padding: 2em 0;
@@ -214,5 +233,9 @@ footer p {
         padding: 3em 2em;
         text-align: center;
         margin: 3em;
+    }
+    .return-to-top {
+        left: 10px;
+        bottom: 10px;
     }
 }
