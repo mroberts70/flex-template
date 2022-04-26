@@ -22,6 +22,8 @@ aside {
     margin: 1em;
     border: 3px double #aaa;
     border-radius: 10px;
+    position: sticky;
+    top: 0;
 }
 
 /* Filters */
