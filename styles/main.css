@@ -7,7 +7,6 @@
 body {
     font-family: 'Kanit', sans-serif;
     font-size: 110%;
-    height: 100vh;
     background-color: #202124;
     color: aliceblue;
     display: flex;
@@ -23,7 +22,6 @@ header {
 }
 .logoimage {
     max-width: 200px; 
-    background-color: transparent; 
     padding: 1em; 
 }
 
@@ -42,7 +40,6 @@ nav div {
 
 nav a {
     text-shadow: 0 0 3px black;
-    transition: all ease-in-out 300ms;
 }
 nav a:link, nav a:visited {
     color: aliceblue;
@@ -127,7 +124,6 @@ nav a:hover, nav a:focus {
 .cta-contents {
     color: #202124;
     padding: 3em 5em;
-    margin-left: 2em;
     background-color: aliceblue;
     border-radius: 5px;
     display: flex;

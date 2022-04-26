@@ -22,8 +22,6 @@ aside {
     margin: 1em;
     border: 3px double #aaa;
     border-radius: 10px;
-    position: sticky;
-    top: 0;
 }
 
 /* Filters */
@@ -72,9 +70,7 @@ form h5 {
     border: 3px solid fuchsia;
 }
 
-.products {
-    margin: auto;
-}
+
 .product {
     background-color: #303235;
     display: grid;
