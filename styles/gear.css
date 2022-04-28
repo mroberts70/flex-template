@@ -1,4 +1,9 @@
+body {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 header {
+    flex-basis: 100vw;
     background-color: darkgreen;
     background-image: url(../images/hero-image-forest2.jpg);
     background-position: center;
@@ -13,15 +18,16 @@ header h1 {
     font-size: 250%;
     margin-left: 2em;
 }
-.the-gear {
-    display: grid;
-    grid-template-columns: 20vw 80vw;
-}
+
 aside {
     background-color: #555;
-    margin: 1em;
+    margin: 2em .5em;
     border: 3px double #aaa;
     border-radius: 10px;
+    flex: 1 2 20vw;
+    align-self: flex-start;
+    position: sticky;
+    top: 25px;
 }
 
 /* Filters */
@@ -70,8 +76,11 @@ form h5 {
     border: 3px solid fuchsia;
 }
 
-
+.products {
+    flex: 2 1 75vw;
+}
 .product {
+    
     background-color: #303235;
     display: grid;
     grid-template-columns: 22% 78%;
@@ -122,10 +131,14 @@ form h5 {
         text-align: center;
         margin: 0;
     }
-    .the-gear, .products, .product, header {
+    .products, .product {
         grid-template-columns: 1fr;
         max-width: 100%;
 
+    }
+    aside {
+        position: relative;
+        margin-bottom: 30px;
     }
     .form-element input[type="text"] {
         width: 95%;
